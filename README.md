@@ -32,11 +32,7 @@ Lambda is perhaps the most well known serverless service. With Lambda. We have f
  
  
  
- 
-
-
-
-Working with AWS Lambda
+ ## Working with AWS Lambda
 
 We're going to create a function and we're gpoing to see how we can trigger executions of that function in a couple of different ways. What we're going to do first is we're going to go and create a Lambda function that logs a message to Amazon CloudWatch logs. And we have some Python code here. So what you'll want to do is copy all of this Python code from line 7 to 24. 
 import logging
