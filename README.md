@@ -6,6 +6,7 @@ For an even better in-depth experience and explanation, it is best to have acces
 
 
 ## AWS Serverless
+
 Deploying serverless applications on AWS.
 <br>
 Using services such as AWS Lambda, SQS, SNS, EventBridge, API Gateway – 
