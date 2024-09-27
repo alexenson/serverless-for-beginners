@@ -51,7 +51,7 @@ import json<br>
 logger = logging.getLogger()<br>
 logger.setLevel(logging.INFO)<br>
 
-def lambda_handler(event, context):
+def lambda_handler(event, context):<br>
     # Extract the message from the event. Assuming the input is a simple JSON object {"message": "your message here"}
     message = event.get('message', 'No message provided')
     
