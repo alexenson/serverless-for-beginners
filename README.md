@@ -46,7 +46,7 @@ We're going to create a function and we're going to see how we can trigger execu
 import logging<br>
 import json<br>
 
-*#Configure the logging*
+**#Configure the logging**
 logger = logging.getLogger()<br>
 logger.setLevel(logging.INFO)<br>
 
