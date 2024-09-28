@@ -44,24 +44,7 @@ We're going to create a function and we're going to see how we can trigger execu
 <br>
 <br>
 
-import logging<br>
-import json<br>
-
-**# Configure the logging**<br>
-logger = logging.getLogger()<br>
-logger.setLevel(logging.INFO)<br>
-
-def lambda_handler(event, context):<br>
-    # Extract the message from the event. Assuming the input is a simple JSON object {"message": "your message here"}
-    message = event.get('message', 'No message provided')
-    
-    # Log the message
-    logger.info(message)
-    
-    return {
-        'statusCode': 200,
-        'body': json.dumps('Message logged successfully!')
-    }
+![Capture](https://github.com/user-attachments/assets/4ff4a8fe-df96-4d8a-bb02-383d0a18e4bc)
 
 So I'm gpoing to copy this code now. What this code does is it simply writes an event to CloudWatch logs with a message and so we can write a customized message and it's gpoing to appear in CloudWatch logs in one of the log files. So back in the console, I'm simply gpoing to search for Lambda and there it is Lambda run code without thinking about servers. So let's create a function in Lambda. And here what we can do is we can author from scratch, choose a blueprint or you can even use a container image. Well, we're gpoing to author from scratch and I'm gpoing to give this one a name. I'm gpoing to call this write to Cloudwatch. Next, we need to choose the run time. We've got several different options as you can see. So what we're gpoing to choose is we're gpoing to use the latest Python. In fact, the latest would be up here. Python 3.12 doesn't really matter. 3.9,  3.12. Whatever the latest is when you watch this video, it could be different. Shouldn't matter with this particular code sample. So I'm gpoing to just gpoing to choose one of these run times. Next, you've got the option for the architecture. We leave that on x86_64. Permissions are really important to understand with Lambda. If you want your Lambda function to be able to interact with any other AWS services, you will need to supply permissions. Now by default, it's gpoing to create a new role with basic Lambda permissions. And those permissions will provide access to cloud watch logs. So I can just leave it as it is. Alternatively, you can use an existing role or choose from various policy templates which you can find down here. So I'll just leave it on the default to create a new role with basic Lambda permissions. We then have advanced settings. There are a few options here. We don't need to change any of those for now. So we'll just leave those selected or deselected at the defaults. And let's create the function. Once the function created, you're going to end up on this page here. What we can see is a function overview. We can see our triggers. If there are any, we can see destinations. We're gpoing to go over these in just a moment. Down a little bit lower, we can see the code editor and it's just written some default Lambda code in here. Hello from Lambda. What I want to do is delete that paste in the code, 
 import logging
