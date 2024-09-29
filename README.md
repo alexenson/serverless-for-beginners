@@ -36,7 +36,6 @@ Lambda is perhaps the most well known serverless service. With Lambda. We have f
 
  
  <br>
- <br>
  
  ## Working with AWS Lambda
 
