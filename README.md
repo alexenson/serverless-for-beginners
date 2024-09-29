@@ -110,11 +110,8 @@ We're going to start building a serverless application. This serverless applicat
 
 
 
-So we're going to build this part of the application and rather than have the API front end, we're actually going to submit a request through via the CLI and via the Lambda console as well. So that we still end up with a message added to the table. The whole application works except the web front end and the API will be added on later on. So we're simply going to be submitting our test events via the console and invoking our Lambda function via the CLI. 
- 
-
-
-
+So we're going to build this part of the application and rather than have the API front end, we're actually going to submit a request through via the CLI and via the Lambda console as well. So that we still end up with a message added to the table. The whole application works except the web front end and the API will be added on later on. So we're simply going to be submitting our test events via the console and invoking our Lambda function via the CLI. <br>
+![3](https://github.com/user-attachments/assets/ec3d0680-c0c6-4391-8b1b-20e176ee92b1)
 
 
 
