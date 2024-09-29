@@ -90,7 +90,8 @@ Let's have a look at SNS. This is the simple notification service. The differenc
 
 
 
-EventBridge supports many different event sources. Can be AWS services, custom applications or SAS applications. Some event happens in those sources and that information is then sent through to EventBridge, the event bus based on rules that we create is then going to forward that information to various different targets. They can be, for example, Lambda functions, Kinesis, data streams, SNS topics and so on. So there we have targets. So EventBridge is a really useful tool. There's so much power that we can do with EventBridge and it has lots of built in integrations for AWS services and rules that we can create very easily through a graphical wizard. 
+EventBridge supports many different event sources. Can be AWS services, custom applications or SAS applications. Some event happens in those sources and that information is then sent through to EventBridge, the event bus based on rules that we create is then going to forward that information to various different targets. They can be, for example, Lambda functions, Kinesis, data streams, SNS topics and so on. So there we have targets. So EventBridge is a really useful tool. There's so much power that we can do with EventBridge and it has lots of built in integrations for AWS services and rules that we can create very easily through a graphical wizard. <br>
+![4](https://github.com/user-attachments/assets/16c4daa4-5d17-4b5d-af00-89c69473bbdb)
  
 
 
