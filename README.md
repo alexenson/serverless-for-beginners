@@ -53,15 +53,15 @@ So I'm going to copy this code now. What this code does is it simply writes an e
 
 Which we got from the document in visual studio code and then click on deploy. So that's going to deploy my update. Now along the top here, there are a couple of really important places. One is configuration. If we click on configuration, we can see there are lots of options here. For example, the default time out for our function is 3 seconds. We can increase that if we wish to. We've got memory here, 128 megabytes by default. What I want to show you is down in permissions. So permissions you can see there's a role here and that role has CloudWatch logs permissions by default. If you need to add permissions to another service, you can always go ahead and edit the role. Also on the monitor tab, this is where we can click on CloudWatch logs. Once we've executed our function. I'm going to use the test utility here. And what we're going to do is we're going to create a test event. So back in this document here, we're going to create a test event using this test data and it just says, hello CloudWatch.<br>
 
-{
+*{
   "message": "Hello, CloudWatch!"
-}
+}*
 
 So I'm going to copy this json and back in the event json here, let's paste this in, just call this *myevent* and then I'm going to save and then run a test event. What we see at the top here is a nice green banner which is saying that it's succeeded. And we've got a response here which says message logged successfully. Bit lower we can see some more log output and there are some details here in the summary as well. So how long did it take to run? Cos you get charged based on this per millisecond, which function version was used? $LATEST is the editable version of the code where we just entered our code a few moments ago. You can then publish different versions as you make changes as well. And we can see the log output here. So this should be in CloudWatch logs. So you can click here or remember, you can come up to the monitor tab and then click on view CloudWatch logs here. So now we can see this log stream. I'm going to click on the log stream, open up the log stream here and we can see our message ‘Hello, CloudWatch’ and there's a few events related to that individual execution. Telling us when it started, when it finished. We've got a report and then we have the information in the middle there. So that all worked nicely. If I come back to the file here, *working-with-lambda.md*  what we want to do next is see how we can do the same thing from the command line interface. What we're going to do is use this test data.<br>
 
-{
+*{
   "message": "Hello from CLI!"
-}
+}*
  
 We need to create a file called *payload.json*. And then we're going to run this command to invoke our function.<br> 
 *aws lambda invoke --function-name <function-name> --payload fileb://payload.json response.json*<br>
