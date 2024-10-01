@@ -128,10 +128,13 @@ aws lambda invoke --function-name <function-name> --payload fileb://input.json o
 <br>
 <br>
  
-So what we're going to do here is we're gpoing to run a second test and this one is gpoing to be using the CLI and CloudShell. So we'll open up CloudShell. We're gpoing to create a file called input.json  and it's going to have Test Product 2 here, quantity 2. So I'm gpoing to open up the CloudShell console. I'm gpoing to use nano to create a file called input.json.  I'm gpoing to paste in my input there. And then we're gpoing to come back and what we need to do is run this invoke command. And of course, I need my function name. So I need to invoke the first function. That is the SubmitOrderFunction. So let's copy the function name, paste this in.
-```bash
-aws lambda invoke --function-name SubmitOrderFunction --payload fileb://input.json output.json
-```
+So what we're going to do here is we're going to run a second test and this one is going to be using the CLI and CloudShell. So we'll open up CloudShell. We're going to create a file called input.json  and it's going to have Test Product 2 here, quantity 2. So I'm going to open up the CloudShell console. I'm going to use nano to create a file called input.json.  I'm going to paste in my input there. And then we're going to come back and what we need to do is run this invoke command. And of course, I need my function name. So I need to invoke the first function. That is the *SubmitOrderFunction*. So let's copy the function name, paste this in.
+<br>
+```bash<br>
+aws lambda invoke --function-name SubmitOrderFunction --payload fileb://input.json output.json<br>
+```<br>
+<br>
+<br>
 
 And then we're going to invoke the function. The payload is in binary form, the fileb colon / / input.json and then the output goes there to record the success. So let's just copy the entire command. And back here in CloudShell, I'll just run this command to invoke the function
 aws lambda invoke --function-name SubmitOrderFunction --payload fileb://input.json output.json
