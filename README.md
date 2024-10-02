@@ -137,9 +137,9 @@ aws lambda invoke --function-name SubmitOrderFunction --payload fileb://input.js
 <br>
 <br>
 
-And then we're going to invoke the function. The payload is in binary form, the fileb colon / / input.json and then the output goes there to record the success. So let's just copy the entire command. And back here in CloudShell, I'll just run this command to invoke the function
-aws lambda invoke --function-name SubmitOrderFunction --payload fileb://input.json output.json
-and we get a status 200 which is always good news, come back, refresh. And now we have the second product that's added into our e-commerce table. So at this point, we have the submit order function, we have the queue, we have the ProcessOrderFunction and the DynamoDB table. 
+And then we're going to invoke the function. The payload is in binary form, the fileb colon / / input.json and then the output goes there to record the success. So let's just copy the entire command. And back here in CloudShell, I'll just run this command to invoke the function.<br>
+aws lambda invoke --function-name SubmitOrderFunction --payload fileb://input.json output.json<br>
+And we get a status 200 which is always good news, come back, refresh. And now we have the second product that's added into our e-commerce table. So at this point, we have the submit order function, we have the queue, we have the ProcessOrderFunction and the DynamoDB table. 
  
 And we've submitted events from the CloudShell CLi, as well as test events through the Lambda function console. And those have both ended up in the table. So that's it for this lesson. When we pick it up again, for part two, we're going to add the static website front end and the API gateway so that we can publish this out onto the internet.
 
