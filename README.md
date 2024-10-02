@@ -159,11 +159,12 @@ So how is it structured? So in API Gateway, we have a graphical interface which 
 
 Let's have a look at another example to put this together. Here we have an S3 website. Let's imagine this is a static website. We then have two different Lambda functions. One for sending support emails, one for logging, support tickets. And then we have an API Gateway end point in front. So here we've created the resources. One is */sendEmail*, one is */submitTicket*. And in both cases, there is a POST method. We can see now that when the customer submits a support request, the information could get emailed through to the support team or they can submit a support ticket and that gets logged into a DynamoDB table by the Lambda function. So there's an example where we have a single endpoint, we then have the resources and the methods directing the request through to the different back end Microservices.<br>
 ![4](https://github.com/user-attachments/assets/eceac7e7-3775-4f10-9438-169f72500607)
-
+<br>
+<br>
  
 
 
-Building a serverless application with a REST API (part 2)
+## Building a serverless application with a REST API (part 2)
 
 This is part two of our building a serverless application with rest API. We're gpoing to complete what we started in part one. So in part one, we ended here,
  
