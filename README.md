@@ -166,9 +166,9 @@ Let's have a look at another example to put this together. Here we have an S3 we
 
 ## Building a serverless application with a REST API (part 2)
 
-This is part two of our building a serverless application with rest API. We're gpoing to complete what we started in part one. So in part one, we ended here,
- 
-we used a the Lambda function console to submit a test event which went through our submit order function into the queue, which triggered our process order function, which placed the product into the table. So it looks like we have an order from our e-commerce store. We also used the CLI. What we're gpoing to do now is we're going to add a static website running on S3 and then we're gpoing to add an Amazon API gateway rest API. 
+This is part two of our building a serverless application with rest API. We're going to complete what we started in part one. So in part one, we ended here.<br>
+![1](https://github.com/user-attachments/assets/ada44a85-bdb4-48a3-a97a-d3323f4945d5)<br>
+We used a the Lambda function console to submit a test event which went through our submit order function into the queue, which triggered our process order function, which placed the product into the table. So it looks like we have an order from our e-commerce store. We also used the CLI. What we're going to do now is we're going to add a static website running on S3 and then we're going to add an Amazon API gateway rest API. 
  
 This time from the internet using a browser, we can submit an order and the static website will forward the request to the rest API which then proxies the request through to the Lambda function. So again, proxying just means that the API is not performing any kind of transformation of the incoming information to the format that's required for the back end. In this case, the back end the Lambda function does is able to pick up the information in the format that comes straight through from the static website from the form and process that information. So we just proxy it straight through. 
 
