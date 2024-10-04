@@ -198,6 +198,8 @@ Now lastly, let's come back and we need to upload our file. So I've uploaded my 
 ![3](https://github.com/user-attachments/assets/0c820750-a1ab-4c94-855e-0c66da7c5663)<br>
 So now I can enter a product name. Let's say it's going to be an iPhone and I want 1 of them and then let's submit and it says order submitted successfully. <br>
 ![4](https://github.com/user-attachments/assets/09200de8-807f-4f70-855a-fc08543744da)
+![5](https://github.com/user-attachments/assets/af33914a-3d59-49c2-9e29-b0845c246ff2)
+
  
  
 If I now come back to my DynamoDB table, let's refresh to scan the table and there is my iPhone.
