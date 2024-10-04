@@ -192,7 +192,8 @@ We've got the */prod*. So then I just need to type */orders*. So that remember t
 
 So what we'd want to do is just copy this code to allow public read of the objects. So back in our bucket, we can go to permissions, under bucket policy, edit, paste the code in and we need to of course update our bucket ARN, making sure the /* is still in there and then save the changes. <br>
 ![1](https://github.com/user-attachments/assets/22a1dda6-c4e6-4e74-bad2-1e9446128440)<br>
-Now lastly, let's come back and we need to upload our file. So I've uploaded my *index.html*. I can close out of here. I've got the file, let's go to properties and I can click on the static website end point. 
+Now lastly, let's come back and we need to upload our file. So I've uploaded my *index.html*. I can close out of here. I've got the file, let's go to properties and I can click on the static website end point. <br>
+![2](https://github.com/user-attachments/assets/3631540e-6676-4da6-bf6e-71ce420693e0)
  
  
 So now I can enter, enter a product name. Let's say it's gpoing to be an iPhone and I want 1 of them and then let's submit and it says order submitted successfully. 
