@@ -204,7 +204,9 @@ So now I can enter a product name. Let's say it's going to be an iPhone and I wa
 If I now come back to my DynamoDB table, let's refresh to scan the table and there is my iPhone.<br>
 ![6](https://github.com/user-attachments/assets/71fa4881-980c-43b2-a60d-52250fea5aca)<br>
 So that is working correctly. 
-Now, I'll show you a couple of places where things can go wrong. Firstly, the index.html,, but make sure you've updated your endpoints and that you've got /prod /orders in there on the end of your end point. So it should look very much like this one.
+Now, I'll show you a couple of places where things can go wrong. Firstly, the *index.html*, but make sure you've updated your endpoints and that you've got */prod* and */orders* in there on the end of your end point. So it should look very much like this one.
+
+![7](https://github.com/user-attachments/assets/20b8174b-4d02-4852-8864-b0b6705f39fe)
 
  
 
