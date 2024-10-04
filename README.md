@@ -178,51 +178,12 @@ Let's head back over and finish this lab. Back in the instructions file. I'm now
 And what we're going to do first is create the API. The API is going to be called *productordersAPI*. So let's go ahead and create it and then we'll come back and look at some of the configuration. Let's go to the API gateway console (on AWS). We're going to from the main screen here. Just scroll down until you see REST API. Not the private one. This is the public one. Click on build, new API, provide a name. By default, the endpoint type is regional. We don't want edge optimised or private. So let's create the API. Now it puts us into the API configuration. What we need to do here is create resources and methods. The first thing we're going to do is create a resource and that resource is going to be orders. So the path is / and then we have orders. */orders* and click on CORS which is Cross Origin Resource Sharing. We're coming from another website, we're coming from a static website running on S3. That's where the request is going to come from to the API. So we need to enable Cross Origin Resource Sharing to allow that to happen. So what we can do then is simply create the resource. So where we are now is we've done this step here. Step 2, create the orders resource with CORS enabled. Then we need to create a POST method for */orders* that's integrated with the *SubmitOrderFunction*. Once we've done that, we need to enable CORS again. So we have to run some additional settings. Select all the options and then deploy to a new stage. So when we deploy our API, we actually deploy it to a stage and it provides a name that's part of the URL. And we need the API end point that includes the stage name. You'll see that when we get there. So firstly, let's come back what we need to do. We have the */orders* selected. So we're under resources */orders*. I need to click create method on the right hand side, we're going to choose POST. So these are all the various different HTTP methods, we're gpoing to choose POST. Because we're posting a request that's essentially uploading some information. Lambda function is the integration type. It is going to be a proxy integration as I've explained before, because we just send the information in the current form straight through to our *SubmitOrderFunction*. So make sure you choose the right function here (from the drop down box). That's all you need to do here. We can simply create the method. So now the method has been created. All we need to do is head back up to */orders*, click on enable CORS and then select all of these different options (in the CORS settings) and then save. So again, we're just making sure that we have the CORS settings enabled because the request is coming from another website. Once we've done that we can deploy our API, we deploy the API to a stage, we're going to create a new stage and the stage is going to be called *prod*, all lower case and then click on deploy. Now we have an invoke URL. So note that the invoke URL, it has a specific and unique identifier for your API and on the end it has prod. That was the stage that we deployed to. All of that's important information. So we want to copy the invoke URL. Now back in the instructions here, it's telling us to update the invoke URL in the *index.html* file. And the note here that it should it up, end up looking something like this. 
 *'https://v1grynidwb.execute-api.us-east-1.amazonaws.com/prod/orders'*
 Where we have */prod* and then */orders* on the end as well. So make sure you do that. Let's go to line 32 of our code here, *YOUR_API_ENDPOINT*, and paste it in, 
+<br>
+![Capture](https://github.com/user-attachments/assets/7168c348-c010-496d-b34e-b61fa162a1b9)
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Order Form</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
-        .container { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 300px; }
-        h1 { color: #333; text-align: center; }
-        form { display: flex; flex-direction: column; }
-        input[type=text], input[type=number] { padding: 10px; margin: 10px 0; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box; }
-        input[type=button] { background-color: #007bff; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; }
-        input[type=button]:hover { background-color: #0056b3; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Submit a Product Order</h1>
-        <form id="orderForm">
-            <label for="productName">Product Name:</label>
-            <input type="text" id="productName" name="productName">
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity">
-            <input type="button" value="Submit" onclick="submitOrder()">
-        </form>
-    </div>
-    <script>
-        async function submitOrder() {
-            const productName = document.getElementById('productName').value;
-            const quantity = document.getElementById('quantity').value;
-            const response = await fetch('YOUR_API_ENDPOINT', {
-                method: 'POST',
-                body: JSON.stringify({ productName, quantity }),
-                headers: { 'Content-Type': 'application/json' }
-            });
-            if (response.ok) { alert('Order submitted successfully!'); document.getElementById('orderForm').reset(); }
-            else { alert('Failed to submit order.'); }
-        }
-    </script>
-</body>
-</html>
 
-we've got the /prod. So then I just need to type /orders. So that remember that's the resource, the resource is part of the path, it's part of the URL path. So we have to add it on here for the request to work. Once you've done that, don't forget to save your index.html file. And what we want to do now is come back and create our static website. I've already got a couple, but I'll do it from scratch. So let's call this myAPIstaticwebsite-(add some random numbers on the end to make it unique) and then just make it unique. I do want to enable public access for this one. Let's acknowledge that I'm gpoing to do that. Just create the bucket. We will choose our bucket, myAPIstaticwebsite. I'm going to go to properties, all the way to the bottom, static website hosting, enable. Index document is index.html. And then of course, we want to scroll down and save changes. I've got the bucket policy code that you need here. 
+
+We've got the */prod*. So then I just need to type */orders*. So that remember that's the resource, the resource is part of the path, it's part of the URL path. So we have to add it on here for the request to work. Once you've done that, don't forget to save your *index.html* file. And what we want to do now is come back and create our static website. I've already got a couple, but I'll do it from scratch. So let's call this *myAPIstaticwebsite*-(add some random numbers on the end to make it unique) and then just make it unique. I do want to enable public access for this one. Let's acknowledge that I'm gpoing to do that. Just create the bucket. We will choose our bucket, myAPIstaticwebsite. I'm going to go to properties, all the way to the bottom, static website hosting, enable. Index document is index.html. And then of course, we want to scroll down and save changes. I've got the bucket policy code that you need here. 
 {
     "Version": "2012-10-17",
     "Statement": [
