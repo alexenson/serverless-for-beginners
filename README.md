@@ -184,18 +184,11 @@ Where we have */prod* and then */orders* on the end as well. So make sure you do
 
 
 We've got the */prod*. So then I just need to type */orders*. So that remember that's the resource, the resource is part of the path, it's part of the URL path. So we have to add it on here for the request to work. Once you've done that, don't forget to save your *index.html* file. And what we want to do now is come back and create our static website. I've already got a couple, but I'll do it from scratch. So let's call this *myAPIstaticwebsite*-(add some random numbers on the end to make it unique) and then just make it unique. I do want to enable public access for this one. Let's acknowledge that I'm going to do that. Just create the bucket. We will choose our bucket, *myAPIstaticwebsite*. I'm going to go to properties, all the way to the bottom, static website hosting, enable. Index document is *index.html*. And then of course, we want to scroll down and save changes. I've got the bucket policy code that you need here. 
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "PublicReadGetObject",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": "s3:GetObject",
-            "Resource": "<YOUR-BUCKET-ARN>/*"
-        }
-    ]
-}
+<br>
+
+![Capture](https://github.com/user-attachments/assets/fb2d64ba-a968-41be-8187-59b620ad2758)
+
+<br>
 
 So what we'd want to do is just copy this code to allow public read of the objects. So back in our bucket, we can go to permissions, under bucket policy, edit, paste the code in and we need to of course update our bucket ARN, making sure the /* is still in there and then save the changes. 
 
