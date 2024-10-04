@@ -190,7 +190,9 @@ We've got the */prod*. So then I just need to type */orders*. So that remember t
 
 <br>
 
-So what we'd want to do is just copy this code to allow public read of the objects. So back in our bucket, we can go to permissions, under bucket policy, edit, paste the code in and we need to of course update our bucket ARN, making sure the /* is still in there and then save the changes. 
+So what we'd want to do is just copy this code to allow public read of the objects. So back in our bucket, we can go to permissions, under bucket policy, edit, paste the code in and we need to of course update our bucket ARN, making sure the /* is still in there and then save the changes. <br>
+![1](https://github.com/user-attachments/assets/22a1dda6-c4e6-4e74-bad2-1e9446128440)
+
 
  
 Now lastly, let's come back and we need to upload our file. So I've uploaded my index.html there it is. I can close out of here. I've got the file, let's go to properties and I can click on the static website end point. 
