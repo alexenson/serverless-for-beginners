@@ -195,8 +195,8 @@ So what we'd want to do is just copy this code to allow public read of the objec
 Now lastly, let's come back and we need to upload our file. So I've uploaded my *index.html*. I can close out of here. I've got the file, let's go to properties and I can click on the static website end point. <br>
 ![2](https://github.com/user-attachments/assets/3631540e-6676-4da6-bf6e-71ce420693e0)
  
- 
-So now I can enter, enter a product name. Let's say it's gpoing to be an iPhone and I want 1 of them and then let's submit and it says order submitted successfully. 
+![3](https://github.com/user-attachments/assets/0c820750-a1ab-4c94-855e-0c66da7c5663)<br>
+So now I can enter a product name. Let's say it's going to be an iPhone and I want 1 of them and then let's submit and it says order submitted successfully. 
  
  
 If I now come back to my DynamoDB table, let's refresh to scan the table and there is my iPhone.
