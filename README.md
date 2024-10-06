@@ -218,6 +218,7 @@ So deploy, wait a minute or two, sometimes the deployment of an API stage does t
  
 ![2](https://github.com/user-attachments/assets/31efffa9-beb9-4b90-808b-de2e5a6e6b41)
 
+![3](https://github.com/user-attachments/assets/7eec0e18-b1cd-4217-b85c-361e6bc5fccf)
  
 
 So for example, if this time I put in cheese and quantity 2 and then submit. We will see things happening, in this case. Obviously, everything is good. If you have any issues, then it should show you some sort of red Xs on the right hand side here and you can troubleshoot. It might be a CORS error, for example, or it might be a path not found or something like that. So the developer tools are very useful. So that's it for this lab. Our configuration is fully working now with a static website and an API and then our serverless application running in the cloud. 
