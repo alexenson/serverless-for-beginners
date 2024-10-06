@@ -307,7 +307,8 @@ Click on next, I'm going to just close down this message here and we're going to
 ![7](https://github.com/user-attachments/assets/ee4832c3-b756-4b81-bd94-6a17edcac416)
  
 
-Now we do want to choose a specific state. So rather than any state,we want to choose a specific state and then select running.
+Now we do want to choose a specific state. So rather than any state, we want to choose a specific state and then select running.<br>
+![8](https://github.com/user-attachments/assets/1a678cba-2db2-4ac3-b79a-118c025e1434)
 
  
 
