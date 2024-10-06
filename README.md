@@ -239,7 +239,8 @@ Event sources can be as I mentioned before, various different sources such as AW
 ![6](https://github.com/user-attachments/assets/3e68136f-4403-4909-88d4-0303c59ab00f)
 
  
-Let's have a look at an example to help you understand how this works. Here we have EC2, we have an event that's been generated. In this case, it's a termination event. Now, this is an example of a very easy rule to create. There is actually a wizard that helps you to do this. You can choose EC2 as the event source and you can literally specify the EC2 instance terminated event. Then what we can do is apply those rules and route through to a target. In this case, it could be an SNS notification to let someone know that an instance has been terminated. 
+Let's have a look at an example to help you understand how this works. Here we have EC2, we have an event that's been generated. In this case, it's a termination event. Now, this is an example of a very easy rule to create. There is actually a wizard that helps you to do this. You can choose EC2 as the event source and you can literally specify the EC2 instance terminated event. Then what we can do is apply those rules and route through to a target. In this case, it could be an SNS notification to let someone know that an instance has been terminated. <br>
+![1](https://github.com/user-attachments/assets/4fd4499d-2687-48c4-b534-a89ee65cf52f)
  
 
 
