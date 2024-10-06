@@ -313,11 +313,13 @@ Now we do want to choose a specific state. So rather than any state, we want to 
 ![9](https://github.com/user-attachments/assets/727bd78d-b020-428a-b7f3-d41275ffc611)
  
 
- So what this means is every time an instance enters the running state, this rule is going to trigger an action. So on any instance, by the way, you could choose specific instance Ids if you wanted to, of course, we want this to be a general rule. 
+So what this means is every time an instance enters the running state, this rule is going to trigger an action. So on any instance, by the way, you could choose specific instance Ids if you wanted to, of course, we want this to be a general rule. 
 
-So now it's filled out the event pattern for me, I can click on next, choose AWS service as the target. 
- 
-And then what we're going to do in here is search for Lambda, choose Lambda function and then choose my stopec2 function. Notice that you can add additional targets. So you might want a notification as well for example, with SNS. So here, what we'll do is click on next, click on next again and then simply create this rule. So the rules created and it should work. So let's head over to the EC2 console. And what we're going to do is we're going to launch a couple of instances. The first one will be a t2.micro. So I'll just call this t2.micro so that we can recognize it even more easily in the console. 
+So now it's filled out the event pattern for me, I can click on next, choose AWS service as the target. <br>
+![1](https://github.com/user-attachments/assets/428794da-300f-4938-af5f-7b9761b3183c)<br>
+And then what we're going to do in here is search for Lambda, choose Lambda function and then choose my stopec2 function. Notice that you can add additional targets. So you might want a notification as well for example, with SNS. So here, what we'll do is click on next, click on next again and then simply create this rule. 
+
+So the rules created and it should work. So let's head over to the EC2 console. And what we're going to do is we're going to launch a couple of instances. The first one will be a t2.micro. So I'll just call this t2.micro so that we can recognize it even more easily in the console. <br>
  
 
 And then we're going to leave t2.micro. I don't need a Key pair, 
