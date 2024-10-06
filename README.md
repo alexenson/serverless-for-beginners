@@ -222,12 +222,14 @@ So deploy, wait a minute or two, sometimes the deployment of an API stage does t
  
 
 So for example, if this time I put in cheese and quantity 2 and then submit. We will see things happening, in this case. Obviously, everything is good. If you have any issues, then it should show you some sort of red Xs on the right hand side here and you can troubleshoot. It might be a CORS error, for example, or it might be a path not found or something like that. So the developer tools are very useful. So that's it for this lab. Our configuration is fully working now with a static website and an API and then our serverless application running in the cloud. 
- 
+
+![4](https://github.com/user-attachments/assets/65580842-a2fc-46b5-ad90-30827afd1a9d)<br>
 So very easy obviously to delete all of these resources once you've finished, everything is within free tier, so shouldn't cost you anything anyway. But always a good idea to clean things up once you've finished.
 
+<br>
+<br>
 
-
-Amazon EventBridge
+## Amazon EventBridge
 
 EventBridge is a serverless event bus that allows us to build event driven applications. EventBridge supports various different event sources. There's lots of integration for AWS services out of the box. So it's very easy to integrate with various different AWS services. But you can also integrate custom applications and SaaS applications as well. So the event sources generate events, things that are happening to those services. For example, an EC2 an instance might be terminated, that would be an event. Then the events get routed through the event bus into the rules engine where we can configure the rules that we require. And those rules will direct the traffic to various different targets like Lambda and Kinesis and SQS and others. So EventBridge helps us to ingest filter, transform and deliver events to build loosely coupled applications. 
  
