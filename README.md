@@ -310,11 +310,10 @@ Click on next, I'm going to just close down this message here and we're going to
 Now we do want to choose a specific state. So rather than any state, we want to choose a specific state and then select running.<br>
 ![8](https://github.com/user-attachments/assets/1a678cba-2db2-4ac3-b79a-118c025e1434)
 
+![9](https://github.com/user-attachments/assets/727bd78d-b020-428a-b7f3-d41275ffc611)
  
 
- 
-
-So what this means is every time an instance enters the running state, this rule is going to trigger an action. So on any instance, by the way, you could choose specific instance Ids if you wanted to, of course, we want this to be a general rule. 
+ So what this means is every time an instance enters the running state, this rule is going to trigger an action. So on any instance, by the way, you could choose specific instance Ids if you wanted to, of course, we want this to be a general rule. 
 
 So now it's filled out the event pattern for me, I can click on next, choose AWS service as the target. 
  
