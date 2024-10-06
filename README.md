@@ -211,7 +211,8 @@ Now, I'll show you a couple of places where things can go wrong. Firstly, the *i
  
 The other place things can go wrong is back in the API. So again, I keep mentioning CORS, it can be something that you have to sometimes come back in and just do it again. So if for any reason it's not working, come back and enable CORS again, once you've done that, go and deploy the API again. <br>
 ![1](https://github.com/user-attachments/assets/0480e552-ec6d-4b9b-bbcc-672d2873f6c3)<br>
-And when you deploy it for a second time, you can actually choose the stage. 
+And when you deploy it for a second time, you can actually choose the stage.<br> 
+![2](https://github.com/user-attachments/assets/4413d63b-1725-49c5-9588-1ba9d3bb5f0b)
  
 So deploy, wait a minute or two, sometimes the deployment of an API stage does take a minute or two to actually take effect. So that can be an issue as well. And then lastly, it's useful to use developer tools in your browser. If you want to troubleshoot what's going on. For example, for this, I prefer to use the Google Chrome and with Google Chrome, you go to view developer tools and then go to the network tab and then when we submit orders, we can see a bunch of information happening on the right hand side. 
  
