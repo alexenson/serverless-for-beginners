@@ -296,9 +296,10 @@ And we need some permissions for EC2. <br>
 ![4](https://github.com/user-attachments/assets/7b4fef02-4c68-46ec-a0ad-fb634705d0e8)
  
 
-So I'm going to attach a policy type EC2and then just use the AmazonEC2FullAccess and then add those permissions. 
- 
+So I'm going to attach a policy type EC2 and then just use the *AmazonEC2FullAccess* and then add those permissions. <br>
+![5](https://github.com/user-attachments/assets/a421a38a-7fd7-4173-b705-9d263ebf9e60)
 
+ 
 So that's the function ready. Now, we can head over to Amazon EventBridge. So let's find EventBridge - it is under services. In EventBridge we are going to create a rule. We'll give the rule a name, stopec2 and leave the rule with an event pattern selected.
  
 Click on next, I'm gpoing to just close down this message here and we're going to leave the default here. AWS events or EventBridge partner events gpoing to go straight past the sample there, come straight the way down to where it says creation method. Skip the sample piece. It says use pattern form. We're gpoing to leave that selected. Event source is going to be AWS services, AWS service is gpoing to be EC2. So we can type EC2 and then choose the first option simply EC2. And then we're gpoing to choose the event type. I'm just gpoing to type EC2 instance, so I can just filter a little bit, there's quite a few events there and we want to use the EC2 instance state change notification. So now it's starting to create the event pattern in json format. 
