@@ -280,8 +280,9 @@ def lambda_handler(event, context):<br>
         'body': json.dumps('Lambda function execution completed.')
     }
 
-All we need to do is simply copy this code and we're gpoing to head to AWS Lambda. I'm gpoing to create a function. It's going to be a Python function and let's call this stopec2. And it's gpoing to be the Python 3.9 run time and then simply create the function. Now, what I want to do is simply delete the function code.<br>
-![2](https://github.com/user-attachments/assets/f51fb03d-5cb2-4528-9bc0-c3ea6a78b895)
+All we need to do is simply copy this code and we're going to head to AWS Lambda. I'm going to create a function. It's going to be a Python function and let's call this *stopec2*. And it's gpoing to be the Python 3.9 run time and then simply create the function. Now, what I want to do is simply delete the function code.<br>
+![1](https://github.com/user-attachments/assets/26ade5e9-b269-4985-a972-1cfe83b61b40)
+
 
 Add in my code and then click on deploy. 
  
