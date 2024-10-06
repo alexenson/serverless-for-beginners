@@ -244,13 +244,15 @@ Let's have a look at an example to help you understand how this works. Here we h
  
 
 
+Let's have a look at another example with EventBridge and AWS CloudTrail. CloudTrail is an auditing service. It logs all of the API actions in our account. So it keeps a record of who did what, at what time and on what resource. So it generates events, those events can then be put through to the event bus. So in this case, the S3:PutBucketPolicy API was used. That means somebody has applied a bucket policy to an S3 bucket. Maybe we want to know about that. So we create a rule in the event bus and it's going to pick up these *PutBucketPolicy* API actions. And then it's going to send them through to a target. In this case, Lambda. So what we might want to do here is secure the S3 bucket. Maybe we don't want somebody putting on a custom bucket policy. So that of course, is the logic that we would then have in our Lambda function to secure the S3 bucket. Likewise, we could easily just use an SNS notification again and notify someone that this has happened or keep a log of it in a DynamoDB table. Lots of power to do whatever we need to do. In this case, the bucket has now been secured. So those are a couple of examples of working with EventBridge.<br>
+![2](https://github.com/user-attachments/assets/cbce3515-f9d9-4c6d-9641-325e776a2a57)
+<br>
+<br>
 
-Let's have a look at another example with EventBridge and AWS CloudTrail. CloudTrail is an auditing service. It logs all of the API actions in our account. So it keeps a record of who did what, at what time and on what resource. So it generates events, those events can then be put through to the event bus. So in this case, the S3:PutBucketPolicy API was used. That means somebody has applied a bucket policy to an S3 bucket. Maybe we want to know about that. So we create a rule in the event bus and it's gpoing to pick up these PutBucketPolicy API actions. And then it's gpoing to send them through to a target. In this case, Lambda. So what we might want to do here is secure the S3 bucket. Maybe we don't want somebody putting on a custom bucket policy. So that of course, is the logic that we would then have in our Lambda function to secure the S3 bucket. Likewise, we could easily just use an SNS notification again and notify someone that this has happened or keep a log of it in a DynamoDB table. Lots of power to do whatever we need to do. In this case, the bucket has now been secured. So those are a couple of examples of working with EventBridge.
- 
 
 
 
-Create an Amazon EventBridge Rule
+## Create an Amazon EventBridge Rule
 
 We will create a simple Amazon EventBridge event bus that is going to automatically shut down any EC2 instances that aren't the t2.micro instance type. We need to create a Lambda function. In the Amazon EventBridge folder within the course download, you will find this function code. 
 
