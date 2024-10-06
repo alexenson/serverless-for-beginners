@@ -284,9 +284,9 @@ All we need to do is simply copy this code and we're going to head to AWS Lambda
 ![1](https://github.com/user-attachments/assets/26ade5e9-b269-4985-a972-1cfe83b61b40)
 
 
-Add in my code and then click on deploy. 
+Add in my code and then click on deploy.<br> 
+![2](https://github.com/user-attachments/assets/f1e63e29-cb24-4dbe-8e9b-e4d71d14f3cb)
  
-
 
 And that code is now deployed. So what this code will do is it's going to be triggered by Amazon EventBridge and it's gpoing to check any EC2 instance that has entered the running state. That's what the trigger will cause. And it's going to check if it's a t2.micro. If it's not a t2.micro instance type, it's gpoing to stop the instance. So what we do need to do of course is provide permissions. So on configuration permissions, click on the role name here to be taken over to IAM 
  
