@@ -214,9 +214,9 @@ The other place things can go wrong is back in the API. So again, I keep mention
 And when you deploy it for a second time, you can actually choose the stage.<br> 
 ![1](https://github.com/user-attachments/assets/54575f8b-aba3-4e4c-8acb-49d55557045b)
 
- 
 So deploy, wait a minute or two, sometimes the deployment of an API stage does take a minute or two to actually take effect. So that can be an issue as well. And then lastly, it's useful to use developer tools in your browser. If you want to troubleshoot what's going on. For example, for this, I prefer to use the Google Chrome and with Google Chrome, you go to view developer tools and then go to the network tab and then when we submit orders, we can see a bunch of information happening on the right hand side. 
  
+![2](https://github.com/user-attachments/assets/31efffa9-beb9-4b90-808b-de2e5a6e6b41)
 
  
 
