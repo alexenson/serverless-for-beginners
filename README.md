@@ -256,11 +256,11 @@ Let's have a look at another example with EventBridge and AWS CloudTrail. CloudT
 
 We will create a simple Amazon EventBridge event bus that is going to automatically shut down any EC2 instances that aren't the t2.micro instance type. We need to create a Lambda function. In the Amazon EventBridge folder within the course download, you will find this function code. 
 
-import boto3
+import boto3<br>
 import json
 
-def lambda_handler(event, context):
-    ec2 = boto3.client('ec2')
+def lambda_handler(event, context):<br>
+    ec2 = boto3.client('ec2')<br>
     sns = boto3.client('sns')
     
     # Extract the instance ID from the event
