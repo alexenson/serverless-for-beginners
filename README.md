@@ -235,10 +235,10 @@ EventBridge is a serverless event bus that allows us to build event driven appli
 ![5](https://github.com/user-attachments/assets/a6907de0-4a46-49a5-abf8-fc59b0dafef8)
 
  
+Event sources can be as I mentioned before, various different sources such as AWS services themselves, wide variety of support there for many AWS services. But then we can also utilize custom applications and SaaS applications for our sources where the events are being generated from. It supports a default event bus, which is there for AWS events. And then you can build custom event buses as well, for third-party applications. The events get routed and filtered. And so we have various different parameters that we can configure in the event rules in order to determine how we want our events to be routed and any customisations that we want to make. For scalability and reliability, it automatically scales as a serverless service based on the number of events. And it can handle millions of events per second. So very highly scalable and very reliable as well.<br>
+![6](https://github.com/user-attachments/assets/3e68136f-4403-4909-88d4-0303c59ab00f)
 
-Event sources can be as I mentioned before, various different sources such as AWS services themselves, wide variety of support there for many AWS services. But then we can also utilize custom applications and SaaS applications for our sources where the events are being generated from. It supports a default event bus, which is there for AWS events. And then you can build custom event buses as well, for third-party applications. The events get routed and filtered. And so we have various different parameters that we can configure in the event rules in order to determine how we want our events to be routed and any customisations that we want to make. For scalability and reliability, it automatically scales as a serverless service based on the number of events. And it can handle millions of events per second. So very highly scalable and very reliable as well.
  
-
 Let's have a look at an example to help you understand how this works. Here we have EC2, we have an event that's been generated. In this case, it's a termination event. Now, this is an example of a very easy rule to create. There is actually a wizard that helps you to do this. You can choose EC2 as the event source and you can literally specify the EC2 instance terminated event. Then what we can do is apply those rules and route through to a target. In this case, it could be an SNS notification to let someone know that an instance has been terminated. 
  
 
