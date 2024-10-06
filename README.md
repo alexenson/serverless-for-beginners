@@ -292,8 +292,8 @@ And that code is now deployed. So what this code will do is it's going to be tri
 ![3](https://github.com/user-attachments/assets/5622e6be-ec38-4b9b-9047-31d76909e919)
 
  
-
-And we need some permissions for EC2. 
+And we need some permissions for EC2. <br>
+![4](https://github.com/user-attachments/assets/7b4fef02-4c68-46ec-a0ad-fb634705d0e8)
  
 
 So I'm going to attach a policy type EC2and then just use the AmazonEC2FullAccess and then add those permissions. 
