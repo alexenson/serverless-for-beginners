@@ -319,7 +319,7 @@ So now it's filled out the event pattern for me, I can click on next, choose AWS
 ![1](https://github.com/user-attachments/assets/428794da-300f-4938-af5f-7b9761b3183c)<br>
 And then what we're going to do in here is search for Lambda, choose Lambda function and then choose my stopec2 function. Notice that you can add additional targets. So you might want a notification as well for example, with SNS. So here, what we'll do is click on next, click on next again and then simply create this rule. 
 
-So the rule is created and it should work. So let's head over to the EC2 console. And what we're going to do is we're going to launch a couple of instances. The first one will be a t2.micro. So I'll just call this t2.micro so that we can recognize it even more easily in the console. <br>
+So the rule is created and it should work. So let's head over to the EC2 console. And what we're going to do is we're going to launch a couple of instances. The first one will be a t2.micro. So I'll just call this t2.micro so that we can recognise it even more easily in the console. <br>
 ![2](https://github.com/user-attachments/assets/52933be4-9604-433b-adb5-f2a901834d90)
  
 
