@@ -332,7 +332,9 @@ I just select any existing security group, just so that it doesn't create one fo
 
  
 
-So that's my first instance, launching this one should enter the running state and it should remain in the running state. Let's launch another one, call this the Non t2 and choose any other instance type. 
+So that's my first instance, launching this one should enter the running state and it should remain in the running state. Let's launch another one, call this the *Non t2* and choose any other instance type. <br>
+![3](https://github.com/user-attachments/assets/4b7948a6-6344-45e6-a75e-154e7ca8df26)
+
  
 
 So I'm gpoing to choose a t2.medium, proceed without a key pair. Select the security group. Just gpoing to choose one here. I don't really care too much which one it is. 
