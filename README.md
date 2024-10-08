@@ -327,7 +327,7 @@ And then we're going to leave t2.micro. I don't need a Key pair.<br>
 ![1](https://github.com/user-attachments/assets/f141a28a-4fd0-49e7-b0d0-66b01883ac4d)
  
 
-I just select any existing security group just, so that it doesn't create one for me and then launch that instance. <br>
+I just select any existing security group, just so that it doesn't create one for me and then launch that instance. <br>
 ![2](https://github.com/user-attachments/assets/904af37a-2e08-487b-9636-5ba80ab86212)
 
  
