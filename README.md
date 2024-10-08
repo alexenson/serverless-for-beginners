@@ -323,7 +323,8 @@ So the rule is created and it should work. So let's head over to the EC2 console
 ![2](https://github.com/user-attachments/assets/52933be4-9604-433b-adb5-f2a901834d90)
  
 
-And then we're going to leave t2.micro. I don't need a Key pair, 
+And then we're going to leave t2.micro. I don't need a Key pair.<br> 
+![1](https://github.com/user-attachments/assets/f141a28a-4fd0-49e7-b0d0-66b01883ac4d)
  
 
 I just select any existing security group just so that it doesn't create one for me and then launch that instance. 
