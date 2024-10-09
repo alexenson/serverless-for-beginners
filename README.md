@@ -355,7 +355,9 @@ If we come back to our Lambda function, go to monitor, click on view CloudWatch 
 ![5](https://github.com/user-attachments/assets/f6f1178d-7e2b-4eff-a669-3bc8482f17c5)
 
  
-And now we can see there's a log stream, let's click on the log stream, expand the events and we can see in here quite a few messages. 
+And now we can see there's a log stream, let's click on the log stream, expand the events and we can see in here quite a few messages. <br>
+![6](https://github.com/user-attachments/assets/88ef8c9d-e331-4203-9cc9-cc30a5960e5b)
+
  
  
 And this one here is informative. It says stopped because it is not a t2.micro. 
