@@ -436,9 +436,8 @@ def lambda_handler(event, context):<br>
 
 ### 5.	Run the following command in AWS CloudShell
 <br>
-aws lambda invoke --function-name <function-name> --payload <br>
-fileb://payload.json response.json
-<br>
+![Capture](https://github.com/user-attachments/assets/93cf5a6c-81cf-4ac9-8c7e-b093a0045701)
+
  
 ### Create an event notification for S3 upploads
 In this exercise we'll modify the function to write the names of files uploaded to an S3 bucket to CloudWatch Logs<br>
