@@ -371,11 +371,11 @@ And if you go back and try and start it, it's just going to keep doing the same 
 
 ### Amazon Event-Bridge code:
 
-import boto3
+import boto3<br>
 import json
 
-def lambda_handler(event, context):
-    ec2 = boto3.client('ec2')
+def lambda_handler(event, context):<br>
+    ec2 = boto3.client('ec2')<br>
     sns = boto3.client('sns')
     
     # Extract the instance ID from the event
