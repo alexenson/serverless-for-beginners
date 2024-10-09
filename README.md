@@ -337,7 +337,9 @@ So that's my first instance, launching this one should enter the running state a
 
  
 
-So I'm gpoing to choose a t2.medium, proceed without a key pair. Select the security group. Just gpoing to choose one here. I don't really care too much which one it is. 
+So I'm going to choose a *t2.medium*, proceed without a key pair. Select the security group. Just going to choose one here. I don't really care too much which one it is. <br>
+![1](https://github.com/user-attachments/assets/7e2858c1-de4e-46f5-8338-ab6f5226670a)
+
  
 
 And let's try and launch this instance and see what happens. So once they enter the running state at that point in time, the function should be triggered. So the t2.micro here is certainly running. That's not a problem. It's staying up, if I refresh, yeah, seems to be fine. So let's see what happens when our non t2.micro, the t2.medium enters the running state. There we go, it's entered the running state and straight away, I just gave it a refresh almost instantly it changed straight into the stopping state. 
