@@ -422,8 +422,8 @@ def lambda_handler(event, context):<br>
     }
 ### 2.	Create a test event in the console and add the following test data
 <br>
-{
-  "message": "Hello, CloudWatch!"
+{<br>
+  "message": "Hello, CloudWatch!"<br>
 }<br>
 
 ### 3.	Run the test and then view the message in CloudWatch Logs
