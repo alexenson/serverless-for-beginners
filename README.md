@@ -352,6 +352,7 @@ If we come back to our Lambda function, go to monitor, click on view CloudWatch 
  
 ![4](https://github.com/user-attachments/assets/17fc562e-1d1d-4ae4-9acd-977c0131fd2b)
 
+![5](https://github.com/user-attachments/assets/f6f1178d-7e2b-4eff-a669-3bc8482f17c5)
 
  
 And now we can see there's a log stream, let's click on the log stream, expand the events and we can see in here quite a few messages. 
