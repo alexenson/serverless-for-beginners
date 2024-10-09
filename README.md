@@ -365,19 +365,11 @@ And this one here is informative. It says stopped because it is not a t2.micro. 
 ![8](https://github.com/user-attachments/assets/bebdd002-6531-4f23-a501-6b04ce73d467)<br>
 And if you go back and try and start it, it's just going to keep doing the same thing. So our *t2.micro* is fine but the *non t2.micro* is not, it's been stopped. So that's it basically showing you how to use an EventBridge rule. I'm going to terminate my EC2 instance. And of course, you can go and clean up your EventBridge and your Lambda function as well.
 
+<br>
+<br>
 
 
-
-
-
-
-
-
-
-
-
-
-Amazon Event-Bridge code:
+### Amazon Event-Bridge code:
 
 import boto3
 import json
