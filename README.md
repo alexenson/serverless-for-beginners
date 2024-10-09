@@ -342,7 +342,9 @@ So I'm going to choose a *t2.medium*, proceed without a key pair. Select the sec
 
  
 
-And let's try and launch this instance and see what happens. So once they enter the running state at that point in time, the function should be triggered. So the t2.micro here is certainly running. That's not a problem. It's staying up, if I refresh, yeah, seems to be fine. So let's see what happens when our non t2.micro, the t2.medium enters the running state. There we go, it's entered the running state and straight away, I just gave it a refresh almost instantly it changed straight into the stopping state. 
+And let's try and launch this instance and see what happens. So once they enter the running state at that point in time, the function should be triggered. So the t2.micro here is certainly running. That's not a problem. It's staying up, if I refresh, yeah, seems to be fine. So let's see what happens when our non t2.micro, the t2.medium enters the running state. There we go, it's entered the running state and straight away, I just gave it a refresh almost instantly it changed straight into the stopping state. <br>
+![2](https://github.com/user-attachments/assets/1454d629-a1c0-4bc1-afca-01f394cf8f6f)
+
  
 
 If we come back to our Lambda function, go to monitor, click on view CloudWatch logs. 
