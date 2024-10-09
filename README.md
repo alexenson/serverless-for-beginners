@@ -429,17 +429,24 @@ def lambda_handler(event, context):<br>
 ### 3.	Run the test and then view the message in CloudWatch Logs
 ### 4.	Test using the CLI. Create a file in CloudShell named "payload.json" with the following code:
 <br>
-{
-  "message": "Hello from CLI!"
+{<br>
+  "message": "Hello from CLI!"<br>
 }
 <br>
+
 ### 5.	Run the following command in AWS CloudShell
-aws lambda invoke --function-name <function-name> --payload fileb://payload.json response.json
-Create an event notification for S3 upploads
-In this exercise we'll modify the function to write the names of files uploaded to an S3 bucket to CloudWatch Logs
-1.	Update the lambda function code and deploy the update
-import json
-import logging
+<br>
+aws lambda invoke --function-name <function-name> --payload <br>
+fileb://payload.json response.json
+<br>
+ 
+### Create an event notification for S3 upploads
+In this exercise we'll modify the function to write the names of files uploaded to an S3 bucket to CloudWatch Logs<br>
+
+### 1.	Update the lambda function code and deploy the update
+<br>
+import json<br>
+import logging<br>
 import boto3
 
 # Initialize logging
