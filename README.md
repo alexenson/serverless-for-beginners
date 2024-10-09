@@ -361,10 +361,9 @@ And now we can see there's a log stream, let's click on the log stream, expand t
 ![7](https://github.com/user-attachments/assets/a86e6f07-84ca-46ce-9ccb-e0cba1fe6baf)
 
  
- 
-And this one here is informative. It says stopped because it is not a t2.micro. 
- 
-And if you go back and try and start it, it's just gpoing to keep doing the same thing. So our t2.micro is fine but the non t2.micro is not, it's been stopped. So that's it basically showing you how to use an EventBridge rule. I'm going to terminate my EC2 instance. And of course, you can go and clean up your EventBridge and your Lambda function as well.
+And this one here is informative. It says stopped because it is not a t2.micro. <br>
+![8](https://github.com/user-attachments/assets/bebdd002-6531-4f23-a501-6b04ce73d467)<br>
+And if you go back and try and start it, it's just going to keep doing the same thing. So our t2.micro is fine but the non t2.micro is not, it's been stopped. So that's it basically showing you how to use an EventBridge rule. I'm going to terminate my EC2 instance. And of course, you can go and clean up your EventBridge and your Lambda function as well.
 
 
 
