@@ -434,8 +434,7 @@ def lambda_handler(event, context):<br>
 }
 <br>
 
-### 5.	Run the following command in AWS CloudShell
-<br>
+### 5.	Run the following command in AWS CloudShell <br>
 ![Capture](https://github.com/user-attachments/assets/93cf5a6c-81cf-4ac9-8c7e-b093a0045701)
 
  
