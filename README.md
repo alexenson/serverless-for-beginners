@@ -400,7 +400,7 @@ def lambda_handler(event, context):<br>
 ### AWS Lambda code:
 
 Create a Lambda that logs a message to CloudWatch Logs
-1.	Create a Lambda function with the Python runtime and the following code<br>
+### 1.	Create a Lambda function with the Python runtime and the following code<br>
 
 import logging<br>
 import json
@@ -420,16 +420,20 @@ def lambda_handler(event, context):<br>
         'statusCode': 200,
         'body': json.dumps('Message logged successfully!')
     }
-2.	Create a test event in the console and add the following test data
+### 2.	Create a test event in the console and add the following test data
+<br>
 {
   "message": "Hello, CloudWatch!"
-}
-3.	Run the test and then view the message in CloudWatch Logs
-4.	Test using the CLI. Create a file in CloudShell named "payload.json" with the following code:
+}<br>
+
+### 3.	Run the test and then view the message in CloudWatch Logs
+### 4.	Test using the CLI. Create a file in CloudShell named "payload.json" with the following code:
+<br>
 {
   "message": "Hello from CLI!"
 }
-5.	Run the following command in AWS CloudShell
+<br>
+### 5.	Run the following command in AWS CloudShell
 aws lambda invoke --function-name <function-name> --payload fileb://payload.json response.json
 Create an event notification for S3 upploads
 In this exercise we'll modify the function to write the names of files uploaded to an S3 bucket to CloudWatch Logs
