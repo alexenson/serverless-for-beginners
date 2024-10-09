@@ -394,21 +394,23 @@ def lambda_handler(event, context):<br>
         'statusCode': 200,
         'body': json.dumps('Lambda function execution completed.')
 
+<br>
+<br>
 
-
-AWS Lambda code:
+### AWS Lambda code:
 
 Create a Lambda that logs a message to CloudWatch Logs
-1.	Create a Lambda function with the Python runtime and the following code
-import logging
+1.	Create a Lambda function with the Python runtime and the following code<br>
+
+import logging<br>
 import json
 
-# Configure the logging
-logger = logging.getLogger()
+#Configure the logging
+logger = logging.getLogger()>br>
 logger.setLevel(logging.INFO)
 
-def lambda_handler(event, context):
-    # Extract the message from the event. Assuming the input is a simple JSON object {"message": "your message here"}
+def lambda_handler(event, context):<br>
+    #Extract the message from the event. Assuming the input is a simple JSON object {"message": "your message here"}<br>
     message = event.get('message', 'No message provided')
     
     # Log the message
