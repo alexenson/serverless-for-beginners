@@ -350,7 +350,9 @@ And let's try and launch this instance and see what happens. So once they enter 
 If we come back to our Lambda function, go to monitor, click on view CloudWatch logs. <br>
 ![3](https://github.com/user-attachments/assets/2270a497-ae29-419f-8fea-eb51d91bc731)
  
- 
+![4](https://github.com/user-attachments/assets/17fc562e-1d1d-4ae4-9acd-977c0131fd2b)
+
+
  
 And now we can see there's a log stream, let's click on the log stream, expand the events and we can see in here quite a few messages. 
  
