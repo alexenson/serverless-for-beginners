@@ -446,7 +446,7 @@ In this exercise we'll modify the function to write the names of files uploaded 
 
 ### 2.	Edit the execution role to add permissions to Lambda to read from S3
 ### 3.	Create an event notification for all S3 object create events by adding a trigger to AWS Lambda
-### 4.	Upload a file and check if a message is written to CloudWatch Logs that includes the file na
+### 4.	Upload a file and check if a message is written to CloudWatch Logs that includes the file name
 <br>
 <br>
 
