@@ -444,20 +444,16 @@ In this exercise we'll modify the function to write the names of files uploaded 
 ### 1.	Update the lambda function code and deploy the update<br>
 ![Capture](https://github.com/user-attachments/assets/c9bf0954-ca16-4b5d-8d73-263f138e64fe)
 
-2.	Edit the execution role to add permissions to Lambda to read from S3
-3.	Create an event notification for all S3 object create events by adding a trigger to AWS Lambda
-4.	Upload a file and check if a message is written to CloudWatch Logs that includes the file na
+### 2.	Edit the execution role to add permissions to Lambda to read from S3
+### 3.	Create an event notification for all S3 object create events by adding a trigger to AWS Lambda
+### 4.	Upload a file and check if a message is written to CloudWatch Logs that includes the file na
+<br>
+<br>
+
+## Serverless App:
 
 
-
-
-
-
-
-Serverless App:
-
-
-ProcessOrderFunction.py
+### ProcessOrderFunction.py
 
 import json
 import boto3
