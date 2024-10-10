@@ -443,31 +443,8 @@ In this exercise we'll modify the function to write the names of files uploaded 
 
 ### 1.	Update the lambda function code and deploy the update
 <br>
-import json<br>
-import logging<br>
-import boto3
+![Capture](https://github.com/user-attachments/assets/c9bf0954-ca16-4b5d-8d73-263f138e64fe)
 
-# Initialize logging
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-
-def lambda_handler(event, context):
-    # Log the raw event
-    logger.info("Event: " + json.dumps(event))
-    
-    # Process each record within the event
-    for record in event['Records']:
-        # Extract the bucket name and file key from the event
-        bucket_name = record['s3']['bucket']['name']
-        file_key = record['s3']['object']['key']
-        
-        # Log the bucket name and file key to CloudWatch
-        logger.info(f"New file uploaded: {file_key} in bucket {bucket_name}")
-    
-    return {
-        'statusCode': 200,
-        'body': json.dumps('Processed S3 upload event successfully!')
-    }
 2.	Edit the execution role to add permissions to Lambda to read from S3
 3.	Create an event notification for all S3 object create events by adding a trigger to AWS Lambda
 4.	Upload a file and check if a message is written to CloudWatch Logs that includes the file na
