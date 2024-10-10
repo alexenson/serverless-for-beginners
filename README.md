@@ -484,17 +484,11 @@ In this exercise we'll modify the function to write the names of files uploaded 
 
 ### Serverless Application with REST API – Part 2
 
-1. Create the API
-1.	Create a REST API in the API Gateway Console named ProductOrdersAPI
-2.	Create a new resource /orders and enable CORS
-3.	Create a POST method for /orders integrated with the SubmitOrderFunction
-4.	Enable a Lambda proxy integration
-5.	Click back up to the /orders resource and click "Enable CORS"
-6.	Select all CORS options
-7.	Deploy your API to a new stage named prod
-8.	Update the invoke URL in the index.html file on line 32 where it says YOUR_API_ENDPOINT
-note, the invoke URL on line 32 should include /prod/orders on the end and look like this example
+![Capture](https://github.com/user-attachments/assets/ac6e9cb7-a08b-4394-8ea8-f43302c3935a)
+
 'https://v1grynidwb.execute-api.us-east-1.amazonaws.com/prod/orders'
+
+
 2. Create the static website bucket and test the application
 1.	In Amazon S3 create a bucket
 2.	Configure the bucket for static website hosting
