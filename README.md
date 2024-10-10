@@ -458,27 +458,13 @@ In this exercise we'll modify the function to write the names of files uploaded 
 ![Capture](https://github.com/user-attachments/assets/42794d93-ede8-494c-b2b6-5f464a4e6409)
 
 
+### SubmiOrderFunction.py
 
-SubmiOrderFunction.py
-
-import json
-import boto3
-
-sqs = boto3.client('sqs')
-queue_url = 'YOUR_SQS_QUEUE_URL'
-
-def lambda_handler(event, context):
-    try:
-        order_details = json.loads(event['body'])
-        response = sqs.send_message(QueueUrl=queue_url, MessageBody=json.dumps(order_details))
-        return {'statusCode': 200, 'headers': {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Content-Type', 'Access-Control-Allow-Methods': 'OPTIONS,POST'}, 'body': json.dumps({'message': 'Order submitted to queue successfully'})}
-    except Exception as e:
-        return {'statusCode': 400, 'body': json.dumps({'error': str(e)})}
+![Capture](https://github.com/user-attachments/assets/2b3e687a-40ab-44db-a842-66d1ad699436)
 
 
 
-
-Index.html
+### Index.html
 
 <!DOCTYPE html>
 <html lang="en">
