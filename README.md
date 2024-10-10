@@ -441,8 +441,7 @@ def lambda_handler(event, context):<br>
 ### Create an event notification for S3 upploads
 In this exercise we'll modify the function to write the names of files uploaded to an S3 bucket to CloudWatch Logs<br>
 
-### 1.	Update the lambda function code and deploy the update
-<br>
+### 1.	Update the lambda function code and deploy the update<br>
 ![Capture](https://github.com/user-attachments/assets/c9bf0954-ca16-4b5d-8d73-263f138e64fe)
 
 2.	Edit the execution role to add permissions to Lambda to read from S3
