@@ -438,7 +438,7 @@ def lambda_handler(event, context):<br>
 ![Capture](https://github.com/user-attachments/assets/93cf5a6c-81cf-4ac9-8c7e-b093a0045701)
 
  
-### Create an event notification for S3 upploads
+### Create an event notification for S3 uploads
 In this exercise we'll modify the function to write the names of files uploaded to an S3 bucket to CloudWatch Logs<br>
 
 ### 1.	Update the lambda function code and deploy the update<br>
