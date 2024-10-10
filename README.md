@@ -478,23 +478,12 @@ In this exercise we'll modify the function to write the names of files uploaded 
 
 ![Capture](https://github.com/user-attachments/assets/3dc776df-83ec-4a66-b3b0-e7abb27d429d)
 
+![Capture](https://github.com/user-attachments/assets/f9977318-9b84-440d-b043-691d0bd4e8ff)
 
 
-5. Create the DynamoDB table
-1.	Create a DynamoDB table with the following settings
-•	Name: ProductOrders
-•	Primary key: orderId
-6. Deploy and test the application
-1.	Add the table name to line 6 of the ProcessOrderFunction function code
-2.	Go to SQS and configure a Lambd trigger and specify the ProcessOrderFunction
-3.	Check the DynamoDB table to see if the first test event was processed
-4.	Test using the CLI. Using CloudShell create a file named input.json with the following contents
-{
-  "body": "{\"productName\":\"Test Product 2\",\"quantity\":2}"
-}
-5.	Invoke the function:
-aws lambda invoke --function-name <function-name> --payload fileb://input.json output.json
-Serverless Application with REST API – Part 2
+
+### Serverless Application with REST API – Part 2
+
 1. Create the API
 1.	Create a REST API in the API Gateway Console named ProductOrdersAPI
 2.	Create a new resource /orders and enable CORS
