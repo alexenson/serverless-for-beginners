@@ -472,20 +472,10 @@ In this exercise we'll modify the function to write the names of files uploaded 
 
 ### Serverless App instructions
 
-Serverless Application with REST API – Part 1
-1. Create the first Lambda function
-1.	Create a Lambda function with the following settings
-•	Name: SubmitOrderFunction
-•	Python 3.9 runtime
-2.	Add the code from the SubmitOrderFunction.py file
-3.	Add the AmazonSQSFullAccess permissions policy to the execution role
-you need to come back and add the queue URL shortly
-2. Create the SQS queue
-1.	Create an SQS queue
-2.	Use the standard queue type
-3.	Name it: ProductOrdersQueue
-4.	Copy the queue URL and add it to line 5 of the SubmitOrderFunction code
-5.	Deploy the Lambda function
+#### Serverless Application with REST API – Part 1
+
+![Capture](https://github.com/user-attachments/assets/97ea4e1c-2cd8-4378-a96c-d46f310ee846)
+
 3. Test order submissions
 1.	In Lambda create and submit a test event with the following data
 {
