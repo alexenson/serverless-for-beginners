@@ -476,18 +476,10 @@ In this exercise we'll modify the function to write the names of files uploaded 
 
 ![Capture](https://github.com/user-attachments/assets/97ea4e1c-2cd8-4378-a96c-d46f310ee846)
 
-3. Test order submissions
-1.	In Lambda create and submit a test event with the following data
-{
-  "body": "{\"productName\":\"Test Product\",\"quantity\":3}"
-}
-2.	Go to SQS and poll for messages - you should see a message waiting the queue
-4. Create the processing function
-1.	Create a Lambda function with the following settings
-•	Name: ProcessOrderFunction
-•	Python 3.9 runtime
-2.	Add the code from the ProcessOrderFunction.py file
-3.	Add the AmazonSQSFullAccess and AmazonDynamoDBFullAccess permissions policies to the execution role
+![Capture](https://github.com/user-attachments/assets/3dc776df-83ec-4a66-b3b0-e7abb27d429d)
+
+
+
 5. Create the DynamoDB table
 1.	Create a DynamoDB table with the following settings
 •	Name: ProductOrders
